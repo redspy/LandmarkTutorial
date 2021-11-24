@@ -17,6 +17,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
            .previewDevice(PreviewDevice(rawValue: "iPhone"))
+           .environmentObject(ModelData())
 //            .environment(\.colorScheme, .dark)
     }
 }
